@@ -29,7 +29,7 @@ module alu(
     );
 
     always @(*) begin
-        num2_reg = 0;
+        //num2_reg = 0;
         case (alucontrol)
             //logic op
             `EXE_AND_OP:y <= a & b;
