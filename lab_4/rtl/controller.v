@@ -30,7 +30,7 @@ module controller(
 	input wire flushE,
 	output wire memtoregE,alusrcE,
 	output wire regdstE,regwriteE,	
-	output wire[2:0] alucontrolE,
+	output wire[7:0] alucontrolE,
 
 	//mem stage
 	output wire memtoregM,memwriteM,
@@ -41,23 +41,22 @@ module controller(
     );
 	
 	//decode stage
-	wire[1:0] aluopD;
 	wire memtoregD,memwriteD,alusrcD,
 		regdstD,regwriteD;
-	wire[2:0] alucontrolD;
+	wire[7:0] alucontrolD;
 
 	//execute stage
 	wire memwriteE;
 
 	maindec md(
 		opD,
+		functD,
 		memtoregD,memwriteD,
 		branchD,alusrcD,
 		regdstD,regwriteD,
-		jumpD,
-		aluopD
+		jumpD
 		);
-	aludec ad(functD,aluopD,alucontrolD);
+	aludec ad(opD,functD,alucontrolD);
 
 	assign pcsrcD = branchD & equalD;
 

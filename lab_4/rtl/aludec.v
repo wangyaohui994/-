@@ -35,7 +35,7 @@ module aludec(
                        `EXE_OR:alucontrol <= `EXE_OR_OP;
                        `EXE_XOR:alucontrol <= `EXE_XOR_OP;
                        `EXE_NOR:alucontrol <= `EXE_NOR_OP;
-	                   default:alucontrol <= 9'b00000000;
+	                   default:alucontrol <= 8'b00000000;
 	               endcase
 	           //如果不是R型指令
 	           //如果是逻辑运算指令

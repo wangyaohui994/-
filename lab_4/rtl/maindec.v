@@ -24,7 +24,7 @@ module maindec(
 	input wire[5:0] op,
     input wire[5:0] funct,
     //input wire[4:0] rs,
-    input wire[4:0] rt,
+    //input wire[4:0] rt,
 	output wire memtoreg,memwrite,
 	output wire branch,alusrc,
 	output wire regdst,regwrite,
@@ -40,7 +40,7 @@ module maindec(
                 `EXE_AND, `EXE_OR, `EXE_XOR, `EXE_NOR: controls <= 7'b1100000; // R-type
 			    default:  controls <= 7'b0000000;
 	         endcase
-	       `EXE_ANDI ,`EXE_XORI, `EXE_LUI, `EXE_ORI: controls <= 6'b1010000; // Immediate
+	       `EXE_ANDI ,`EXE_XORI, `EXE_LUI, `EXE_ORI: controls <= 7'b1010000; // Immediate
 	    endcase
 	end
 endmodule
