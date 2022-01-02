@@ -1,0 +1,27 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.sim/sim_1/behav/xsim/glbl.v,1641131079,verilog,,,,glbl,,,,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.srcs/sources_1/ip/data_mem/sim/data_mem.v,1641132258,verilog,,D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,,data_mem,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,1641133375,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/adder.v,,inst_mem,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.srcs/sources_1/new/mycpu.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/pc.v,,mycpu,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/adder.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/alu.v,,adder,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/alu.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/aludec.v,D:/vivadowork/yingzong/hardware/lab_4/rtl/defines.vh,alu,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/aludec.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/eqcmp.v,D:/vivadowork/yingzong/hardware/lab_4/rtl/defines.vh,aludec,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/defines.vh,1641028234,verilog,,,,,,,,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/eqcmp.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/flopenr.v,,eqcmp,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/flopenr.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/flopenrc.v,,flopenr,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/flopenrc.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/flopr.v,,flopenrc,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/flopr.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/floprc.v,,flopr,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/floprc.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/hazard.v,,floprc,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/hazard.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/maindec.v,,hazard,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/maindec.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/mux2.v,D:/vivadowork/yingzong/hardware/lab_4/rtl/defines.vh,maindec,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/mux2.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/mux3.v,,mux2,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/mux3.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.srcs/sources_1/new/mycpu.v,,mux3,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/pc.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/regfile.v,,pc,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/regfile.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/signext.v,,regfile,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/signext.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/sl2.v,,signext,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/sl2.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/rtl/top.v,,sl2,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/rtl/top.v,1641131079,verilog,,D:/vivadowork/yingzong/hardware/lab_4/sim/testbench.v,,top,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
+D:/vivadowork/yingzong/hardware/lab_4/sim/testbench.v,1641131079,verilog,,,,testbench,,,../../../../../../../CO-lab-material-CQU/ref_code;../../../../../rtl,,,,,
