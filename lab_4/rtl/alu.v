@@ -32,15 +32,15 @@ module alu(
         num2_reg = 0;
         case (alucontrol)
             //logic op
-            `EXE_AND_OP:ans <= a & b;
-            `EXE_OR_OP:ans <= a | b;
-            `EXE_XOR_OP:ans <= a ^ b;
-            `EXE_NOR_OP:ans <= ~(a | b);
+            `EXE_AND_OP:y <= a & b;
+            `EXE_OR_OP:y <= a | b;
+            `EXE_XOR_OP:y <= a ^ b;
+            `EXE_NOR_OP:y <= ~(a | b);
             //TODO 由于传进来的immediate是有符号扩展，这里为了节省一个zero_extend,直接在alu中修改高16位
-            `EXE_ANDI_OP:ans <= a & b;
-            `EXE_XORI_OP:ans <= a ^ b;
-            `EXE_LUI_OP:ans <= {b[15:0] , {16{1'b0}} };
-            `EXE_ORI_OP:ans <= a | { {16{1'b0}} , b[15:0]};
+            `EXE_ANDI_OP:y <= a & b;
+            `EXE_XORI_OP:y <= a ^ b;
+            `EXE_LUI_OP:y <= {b[15:0] , {16{1'b0}} };
+            `EXE_ORI_OP:y <= a | { {16{1'b0}} , b[15:0]};
         endcase
     end
     /*
