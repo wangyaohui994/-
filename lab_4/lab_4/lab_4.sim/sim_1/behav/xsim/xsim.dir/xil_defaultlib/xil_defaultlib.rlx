@@ -1,0 +1,27 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/lab_4/lab_4.sim/sim_1/behav/xsim/glbl.v,1641136177,verilog,,,,glbl,,,,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/lab_4/lab_4.srcs/sources_1/ip/data_mem/sim/data_mem.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,,data_mem,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,1641186567,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/adder.v,,inst_mem,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/lab_4/lab_4.srcs/sources_1/new/mycpu.v,1641192765,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/pc.v,,mycpu,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/adder.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/alu.v,,adder,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/alu.v,1641193367,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/aludec.v,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/defines.vh,alu,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/aludec.v,1641189643,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/eqcmp.v,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/defines.vh,aludec,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/defines.vh,1641189646,verilog,,,,,,,,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/eqcmp.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/flopenr.v,,eqcmp,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/flopenr.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/flopenrc.v,,flopenr,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/flopenrc.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/flopr.v,,flopenrc,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/flopr.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/floprc.v,,flopr,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/floprc.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/hazard.v,,floprc,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/hazard.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/maindec.v,,hazard,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/maindec.v,1641189686,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/mux2.v,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/defines.vh,maindec,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/mux2.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/mux3.v,,mux2,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/mux3.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/lab_4/lab_4.srcs/sources_1/new/mycpu.v,,mux3,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/pc.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/regfile.v,,pc,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/regfile.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/signext.v,,regfile,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/signext.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/sl2.v,,signext,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/sl2.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/top.v,,sl2,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/rtl/top.v,1641136177,verilog,,D:/vivadowork/yingzong/--1-2/--1-2/lab_4/sim/testbench.v,,top,,,../../../../../rtl,,,,,
+D:/vivadowork/yingzong/--1-2/--1-2/lab_4/sim/testbench.v,1641136177,verilog,,,,testbench,,,../../../../../rtl,,,,,
