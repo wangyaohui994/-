@@ -1,10 +1,10 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Mon Jan  3 21:53:01 2022
-// Host        : LAPTOP-45BG05BI running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/vivadowork/yingzong/--1-3/--1-3/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem_stub.v
+// Date        : Mon Jan  3 13:11:10 2022
+// Host        : LAPTOP-H9NDJK2O running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top inst_mem -prefix
+//               inst_mem_ inst_mem_stub.v
 // Design      : inst_mem
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xck26-sfvc784-2LV-c

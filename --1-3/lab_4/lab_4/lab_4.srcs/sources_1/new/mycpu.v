@@ -173,7 +173,7 @@ module mycpu(
     mux2 #(32) srcbmux(srcb2E,signimmE,alusrcE,srcb3E);
     alu alu(clk,rst,srca2E,srcb3E,alucontrolE,saE,aluoutE);
     mux2 #(5) wrmux(rtE,rdE,regdstE,writeregE);
-    instdec instdec(instr,ascii);
+    instdec instdec(instrF,ascii);
     //mem stage
     flopr #(32) r1M(clk,rst,srcb2E,writedataM);
     flopr #(32) r2M(clk,rst,aluoutE,aluoutM);
