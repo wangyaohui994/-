@@ -1,0 +1,79 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Jan  2 22:02:19 2022
+| Host         : LAPTOP-45BG05BI running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'inst_mem'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of inst_mem (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Jan  2 22:02:18 2022
+| Host         : LAPTOP-45BG05BI running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'data_mem'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of data_mem (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Jan  1 13:23:07 2022
+| Host         : DESKTOP-NQNJDGK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'inst_mem'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of inst_mem (xilinx.com:ip:blk_mem_gen:8.4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Jan  1 13:23:06 2022
+| Host         : DESKTOP-NQNJDGK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'data_mem'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of data_mem (xilinx.com:ip:blk_mem_gen:8.4) to (Rev. 5)
+
