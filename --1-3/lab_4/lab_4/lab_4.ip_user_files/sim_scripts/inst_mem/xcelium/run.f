@@ -8,7 +8,7 @@
   "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../lab_4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v" \
+  "../../../../../rtl/ip/inst_mem/sim/inst_mem.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

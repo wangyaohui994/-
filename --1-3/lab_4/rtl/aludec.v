@@ -79,7 +79,6 @@ module aludec(
             
             `EXE_LW:alucontrol <= `EXE_LW_OP;
             `EXE_SW:alucontrol <= `EXE_SW_OP;
-            `EXE_ADDI:alucontrol <= `EXE_ADDI_OP;
             `EXE_BEQ:alucontrol <= `EXE_BEQ_OP;
         endcase
 

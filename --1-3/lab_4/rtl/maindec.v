@@ -40,16 +40,16 @@ module maindec(
                  //shif inst
                  `EXE_SLL, `EXE_SRL, `EXE_SRA, `EXE_SLLV, `EXE_SRLV, `EXE_SRAV: controls <= 7'b1100000; //R type 
                  `EXE_MFHI, `EXE_MFLO: controls <= 7'b1100000;
+                 `EXE_ADD, `EXE_ADDU, `EXE_SUB, `EXE_SUBU, `EXE_SLT, `EXE_SLTU, `EXE_MULT, `EXE_MULTU, `EXE_DIV, `EXE_DIVU: controls <= 7'b1100000; // R-type
                   default: controls <= 7'b0000000;
                   
              endcase
              //logic inst
              `EXE_ANDI ,`EXE_XORI, `EXE_LUI, `EXE_ORI: controls <= 7'b1010000; // Immediate
-            
+             `EXE_ADDI, `EXE_ADDIU ,`EXE_SLTI, `EXE_SLTIU: controls <= 7'b1010000; // imm
               6'b100011:controls <= 7'b1010010; //LW
               6'b101011:controls <= 7'b0010100; //SW
               6'b000100:controls <= 7'b0001000; //BEQ
-              6'b001000:controls <= 7'b1010000; //ADDI
 
               6'b000010:controls <= 7'b0000001; //J
               default:  controls <= 7'b0000000; //illegal op
