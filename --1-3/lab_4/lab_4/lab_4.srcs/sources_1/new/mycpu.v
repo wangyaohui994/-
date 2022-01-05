@@ -26,21 +26,21 @@ module mycpu(
     input wire[31:0] instrF,
     output wire memwriteM,
     output wire[31:0] aluoutM,writedataM,
-    input wire[31:0] readdataM
+    input wire[31:0] readdataM,
+    output wire[3:0] selectM
 );
 
     wire [5:0] opD,functD;
     wire regdstE,alusrcE,pcsrcD,memtoregE,memtoregM,memtoregW,
     regwriteE,regwriteM,regwriteW;
-    wire [7:0] alucontrolE;
     wire flushE,equalD;
-    wire [39:0] ascii;
+    //wire [39:0] ascii;
     //ԭcontroller
     //decode stage
     wire[1:0] aluopD;
     wire memtoregD,memwriteD,alusrcD,
     regdstD,regwriteD;
-    wire[7:0] alucontrolD;
+    wire[7:0] alucontrolD,alucontrolE,alucontrolM,alucontrolW;
 
     //execute stage
     wire memwriteE;
@@ -59,9 +59,10 @@ module mycpu(
     assign pcsrcD = branchD & equalD;
 
     //pipeline registers
-    floprc #(13) regE(
+    flopenrc #(13) regE(
         clk,
         rst,
+        ~stallE,
         flushE,
         {memtoregD,memwriteD,alusrcD,regdstD,regwriteD,alucontrolD},
         {memtoregE,memwriteE,alusrcE,regdstE,regwriteE,alucontrolE}
@@ -98,12 +99,20 @@ module mycpu(
     wire [31:0] srcaE,srca2E,srcbE,srcb2E,srcb3E;
     wire [31:0] aluoutE;
     wire [4:0] saE;
+    wire stall_divE;
+    wire stallE;
+    wire [31:0] writedata_resultE;
+    wire [3:0] selectE;
     //wire [63:0] hilo;
     //mem stage
     wire [4:0] writeregM;
+    
     //writeback stage
     wire [4:0] writeregW;
     wire [31:0] aluoutW,readdataW,resultW;
+    wire [31:0] readdata_resultW;
+    //stall_singed
+    
 
     //hazard detection
     hazard h(
@@ -119,8 +128,10 @@ module mycpu(
         writeregE,
         regwriteE,
         memtoregE,
+        stall_divE,
         forwardaE,forwardbE,
         flushE,
+        stallE,
         //mem stage
         writeregM,
         regwriteM,
@@ -129,6 +140,7 @@ module mycpu(
         writeregW,
         regwriteW
     );
+    
 
     //next PC logic (operates in fetch an decode)
     mux2 #(32) pcbrmux(pcplus4F,pcbranchD,pcsrcD,pcnextbrFD);
@@ -139,6 +151,7 @@ module mycpu(
     //regfile (operates in decode and writeback)
     regfile rf(clk,regwriteW,rsD,rtD,writeregW,resultW,srcaD,srcbD);
 
+    
     //fetch stage logic
     pc #(32) pcreg(clk,rst,~stallF,pcnextFD,pcF);
     adder pcadd1(pcF,32'b100,pcplus4F);
@@ -160,29 +173,43 @@ module mycpu(
     assign saD = instrD[10:6];
     
     //execute stage
-    floprc #(32) r1E(clk,rst,flushE,srcaD,srcaE);
-    floprc #(32) r2E(clk,rst,flushE,srcbD,srcbE);
-    floprc #(32) r3E(clk,rst,flushE,signimmD,signimmE);
-    floprc #(5) r4E(clk,rst,flushE,rsD,rsE);
-    floprc #(5) r5E(clk,rst,flushE,rtD,rtE);
-    floprc #(5) r6E(clk,rst,flushE,rdD,rdE);
-    floprc #(5) r7E(clk,rst,flushE,saD,saE);
+    flopenrc #(32) r1E(clk,rst,~stallE,flushE,srcaD,srcaE);
+    flopenrc #(32) r2E(clk,rst,~stallE,flushE,srcbD,srcbE);
+    flopenrc #(32) r3E(clk,rst,~stallE,flushE,signimmD,signimmE);
+    flopenrc #(5) r4E(clk,rst,~stallE,flushE,rsD,rsE);
+    flopenrc #(5) r5E(clk,rst,~stallE,flushE,rtD,rtE);
+    flopenrc #(5) r6E(clk,rst,~stallE,flushE,rdD,rdE);
+    flopenrc #(5) r7E(clk,rst,~stallE,flushE,saD,saE);
+    //flopenrc #(8) r8E(clk, rst, ~stallM, flushM, alucontrolE,alucontrolM);
 
     mux3 #(32) forwardaemux(srcaE,resultW,aluoutM,forwardaE,srca2E);
     mux3 #(32) forwardbemux(srcbE,resultW,aluoutM,forwardbE,srcb2E);
     mux2 #(32) srcbmux(srcb2E,signimmE,alusrcE,srcb3E);
-    alu alu(clk,rst,srca2E,srcb3E,alucontrolE,saE,aluoutE);
+    alu alu(clk,rst,srca2E,srcb3E,alucontrolE,saE,aluoutE,stall_divE);
     mux2 #(5) wrmux(rtE,rdE,regdstE,writeregE);
-    instdec instdec(instrF,ascii);
+    //instdec instdec(instrF,ascii);
+
+    write_data my_wd(alucontrolE,aluoutE,srcb2E,selectE,writedata_resultE);
+
     //mem stage
-    flopr #(32) r1M(clk,rst,srcb2E,writedataM);
+    flopr #(32) r1M(clk,rst,writedata_resultE,writedataM);
     flopr #(32) r2M(clk,rst,aluoutE,aluoutM);
     flopr #(5) r3M(clk,rst,writeregE,writeregM);
+    flopr #(8) r4M(clk,rst,alucontrolE,alucontrolM);
+    flopr #(5) r5M(clk,rst,selectE,selectM);
 
     //writeback stage
     flopr #(32) r1W(clk,rst,aluoutM,aluoutW);
     flopr #(32) r2W(clk,rst,readdataM,readdataW);
     flopr #(5) r3W(clk,rst,writeregM,writeregW);
-    mux2 #(32) resmux(aluoutW,readdataW,memtoregW,resultW);
+    flopr #(8) r4W(clk,rst,alucontrolM,alucontrolW);
+
+    read_data my_rd(alucontrolW,readdataW,aluoutW,readdata_resultW);
+
+
+
+    mux2 #(32) resmux(aluoutW,readdata_resultW,memtoregW,resultW);
+
+
 
 endmodule

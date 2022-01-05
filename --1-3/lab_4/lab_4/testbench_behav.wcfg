@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="382.240 ns"></ZoomStartTime>
-      <ZoomEndTime time="506.973 ns"></ZoomEndTime>
-      <Cursor1Time time="420.000 ns"></Cursor1Time>
+      <ZoomStartTime time="35.577 ns"></ZoomStartTime>
+      <ZoomEndTime time="122.778 ns"></ZoomEndTime>
+      <Cursor1Time time="410.678 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="166"></NameColumnWidth>
-      <ValueColumnWidth column_width="70"></ValueColumnWidth>
+      <NameColumnWidth column_width="196"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="32" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -64,49 +64,90 @@
       <obj_property name="ElementShortName">[3][31:0]</obj_property>
       <obj_property name="ObjectShortName">[3][31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/rf/rf[4]" type="array">
-      <obj_property name="ElementShortName">[4][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[4][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/rf/rf[5]" type="array">
-      <obj_property name="ElementShortName">[5][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/rf/rf[6]" type="array">
-      <obj_property name="ElementShortName">[6][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/rf/rf[7]" type="array">
-      <obj_property name="ElementShortName">[7][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/rf/rf[8]" type="array">
-      <obj_property name="ElementShortName">[8][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/testbench/dut/instr" type="array">
       <obj_property name="ElementShortName">instr[31:0]</obj_property>
       <obj_property name="ObjectShortName">instr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/alu/hilo" type="array">
-      <obj_property name="ElementShortName">hilo[63:0]</obj_property>
-      <obj_property name="ObjectShortName">hilo[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/alu/hilo" type="array">
-      <obj_property name="ElementShortName">hilo[63:0]</obj_property>
-      <obj_property name="ObjectShortName">hilo[63:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/dut/cpu/alu/a" type="array">
       <obj_property name="ElementShortName">a[31:0]</obj_property>
       <obj_property name="ObjectShortName">a[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/alu/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/dut/cpu/alu/y" type="array">
       <obj_property name="ElementShortName">y[31:0]</obj_property>
       <obj_property name="ObjectShortName">y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/alu/mydiv/result_o" type="array">
+      <obj_property name="ElementShortName">result_o[63:0]</obj_property>
+      <obj_property name="ObjectShortName">result_o[63:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/dut/cpu/instdec/ascii" type="array">
       <obj_property name="ElementShortName">ascii[39:0]</obj_property>
       <obj_property name="ObjectShortName">ascii[39:0]</obj_property>
       <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/stallE" type="logic">
+      <obj_property name="ElementShortName">stallE</obj_property>
+      <obj_property name="ObjectShortName">stallE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/stallD" type="logic">
+      <obj_property name="ElementShortName">stallD</obj_property>
+      <obj_property name="ObjectShortName">stallD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/stallF" type="logic">
+      <obj_property name="ElementShortName">stallF</obj_property>
+      <obj_property name="ObjectShortName">stallF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/writedata" type="array">
+      <obj_property name="ElementShortName">writedata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writedata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/readdata" type="array">
+      <obj_property name="ElementShortName">readdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/rf/rd1" type="array">
+      <obj_property name="ElementShortName">rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/rf/rd2" type="array">
+      <obj_property name="ElementShortName">rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/selectM" type="array">
+      <obj_property name="ElementShortName">selectM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">selectM[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/signimmD" type="array">
+      <obj_property name="ElementShortName">signimmD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">signimmD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/stall_divE" type="logic">
+      <obj_property name="ElementShortName">stall_divE</obj_property>
+      <obj_property name="ObjectShortName">stall_divE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/sel" type="array">
+      <obj_property name="ElementShortName">sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem/wea" type="array">
+      <obj_property name="ElementShortName">wea[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem/addra" type="array">
+      <obj_property name="ElementShortName">addra[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem/dina" type="array">
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem/douta" type="array">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
    </wvobject>
 </wave_config>

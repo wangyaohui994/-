@@ -27,8 +27,8 @@ module top(
     );
 
 	wire[31:0] pc,instr,readdata;
-
-	mycpu cpu(clk,rst,pc,instr,memwrite,dataadr,writedata,readdata);
+	wire [3:0] sel;
+	mycpu cpu(clk,rst,pc,instr,memwrite,dataadr,writedata,readdata,sel);
 	inst_mem imem(~clk,pc[7:2],instr);
-	data_mem dmem(~clk,memwrite,dataadr,writedata,readdata);
+	data_mem dmem(~clk,memwrite,sel,dataadr,writedata,readdata);
 endmodule

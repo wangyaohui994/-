@@ -19,7 +19,7 @@ vlog -work blk_mem_gen_v8_4_5  -incr -mfcu \
 "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu \
-"../../../../lab_4.srcs/sources_1/ip/data_mem/sim/data_mem.v" \
+"../../../../../rtl/ip/data_mem/sim/data_mem.v" \
 
 
 vlog -work xil_defaultlib \

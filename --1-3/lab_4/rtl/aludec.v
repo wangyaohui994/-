@@ -57,29 +57,36 @@ module aludec(
                 `EXE_MULTU:alucontrol <= `EXE_MULTU_OP; //multu
                 `EXE_DIV:alucontrol <= `EXE_DIV_OP; //div
                 `EXE_DIVU:alucontrol <= `EXE_DIVU_OP; //divu
-                
-                //`EXE_ADD:alucontrol <= `EXE_ADD_OP; //add
-                //`EXE_SUB:alucontrol <= `EXE_SUB_OP; //sub
 
-                `EXE_SLT:alucontrol <= `EXE_SLT_OP; //slt
+
+
+
                 
                 
                 default:  alucontrol <= 8'b00000000;
             endcase
             //logic inst
-            `EXE_ANDI:alucontrol <= `EXE_ANDI_OP;
-            `EXE_XORI:alucontrol <= `EXE_XORI_OP;
-            `EXE_LUI:alucontrol <= `EXE_LUI_OP;
-            `EXE_ORI:alucontrol <= `EXE_ORI_OP;
+            `EXE_ANDI:alucontrol <= `EXE_ANDI_OP;//addi
+            `EXE_XORI:alucontrol <= `EXE_XORI_OP;//xori
+            `EXE_LUI:alucontrol <= `EXE_LUI_OP;//lui
+            `EXE_ORI:alucontrol <= `EXE_ORI_OP;//ori
             //Arithmetic inst 
             `EXE_ADDI:alucontrol <= `EXE_ADDI_OP; //addi
             `EXE_ADDIU:alucontrol <= `EXE_ADDIU_OP; //addiu
             `EXE_SLTI:alucontrol <= `EXE_SLTI_OP; //slti
             `EXE_SLTIU:alucontrol <= `EXE_SLTIU_OP; //sjtiu
             
-            `EXE_LW:alucontrol <= `EXE_LW_OP;
-            `EXE_SW:alucontrol <= `EXE_SW_OP;
-            `EXE_ADDI:alucontrol <= `EXE_ADDI_OP;
+            //memory inst
+            `EXE_LB:alucontrol <= `EXE_LB_OP;//lb
+            `EXE_LBU:alucontrol <= `EXE_LBU_OP;//lbu
+            `EXE_LH:alucontrol <= `EXE_LH_OP;//lh
+            `EXE_LHU:alucontrol <= `EXE_LHU_OP;//lhu
+            `EXE_LW:alucontrol <= `EXE_LW_OP;//lw
+            `EXE_SB:alucontrol <= `EXE_SB_OP;//sb
+            `EXE_SH:alucontrol <= `EXE_SH_OP;//sh
+            `EXE_SW:alucontrol <= `EXE_SW_OP;//sw
+
+
             `EXE_BEQ:alucontrol <= `EXE_BEQ_OP;
         endcase
 

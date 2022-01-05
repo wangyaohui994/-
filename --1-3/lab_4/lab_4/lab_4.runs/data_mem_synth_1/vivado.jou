@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Jan  2 22:04:28 2022
-# Process ID: 26808
-# Current directory: D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.runs/data_mem_synth_1
+# Start of session at: Wed Jan  5 17:31:15 2022
+# Process ID: 284
+# Current directory: D:/cpudesign/--1-3/--1-3/lab_4/lab_4/lab_4.runs/data_mem_synth_1
 # Command line: vivado.exe -log data_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_mem.tcl
-# Log file: D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.runs/data_mem_synth_1/data_mem.vds
-# Journal file: D:/vivadowork/yingzong/hardware/lab_4/lab_4/lab_4.runs/data_mem_synth_1\vivado.jou
-# Running On: LAPTOP-45BG05BI, OS: Windows, CPU Frequency: 2894 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+# Log file: D:/cpudesign/--1-3/--1-3/lab_4/lab_4/lab_4.runs/data_mem_synth_1/data_mem.vds
+# Journal file: D:/cpudesign/--1-3/--1-3/lab_4/lab_4/lab_4.runs/data_mem_synth_1\vivado.jou
+# Running On: LAPTOP-H9NDJK2O, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17063 MB
 #-----------------------------------------------------------
 source data_mem.tcl -notrace
