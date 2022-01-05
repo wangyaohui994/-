@@ -1,0 +1,454 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Jan  5 21:35:02 2022
+# Process ID: 16668
+# Current directory: D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17672 D:\vivadowork\yingzong\--L_S\--L_S\--1-3\lab_4\lab_4\lab_4.xpr
+# Log file: D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/vivado.log
+# Journal file: D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4\vivado.jou
+# Running On: LAPTOP-45BG05BI, OS: Windows, CPU Frequency: 2894 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run all
+run all
+run all
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+set_property -dict [list CONFIG.Coe_File {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/funcTest_independent/j_BTest/Test2/obj/inst_ram.coe}] [get_ips inst_mem]
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run 10 us
+close_sim
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset inst_mem] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+launch_runs inst_mem_synth_1 -jobs 8
+wait_on_run inst_mem_synth_1
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/pcsrcD}} 
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+set_property -dict [list CONFIG.Coe_File {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/funcTest_independent/j_BTest/Test1/obj/inst_ram.coe}] [get_ips inst_mem]
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset inst_mem] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+launch_runs inst_mem_synth_1 -jobs 8
+wait_on_run inst_mem_synth_1
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run all
+update_files -from_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/mycpu.v -to_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.srcs/sources_1/new/mycpu.v -filesets [get_filesets *]
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+set_property -dict [list CONFIG.Coe_File {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/funcTest_independent/j_BTest/Test2/obj/inst_ram.coe}] [get_ips inst_mem]
+close_sim
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset inst_mem] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/flushE}} 
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+update_compile_order -fileset sources_1
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+set_property -dict [list CONFIG.Coe_File {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/funcTest_independent/j_BTest/Test1/obj/inst_ram.coe}] [get_ips inst_mem]
+close_sim
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run all
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/rf}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/rf/rf[31]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/rf/rf[0]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/rf/rf[1]}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/rf/rd1}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/rf/rd2}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/flushD}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/flushE}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/flushM}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/flushW}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/stallM}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/h/stallW}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/op}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/a}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/b}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/y}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/a}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/b}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/alu/y}} 
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/pcreg/q}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/pcreg/d}} 
+restart
+run all
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/pcadd1/y}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/jaldatamux/d0}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/jaldatamux/d1}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/jaldatamux/s}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/jaldatamux/y}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/cpu/pcjrmux}} 
+restart
+run all
+save_wave_config {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+set_property -dict [list CONFIG.Coe_File {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/funcTest_independent/j_BTest/Test2/obj/inst_ram.coe}] [get_ips inst_mem]
+close_sim
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+set_property -dict [list CONFIG.Coe_File {D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/funcTest_independent/ShiftInstTest/obj/inst_ram.coe}] [get_ips inst_mem]
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+reset_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+export_ip_user_files -of_objects  [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -sync -no_script -force -quiet
+generate_target all [get_files  D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+catch { config_ip_cache -export [get_ips -all inst_mem] }
+export_ip_user_files -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci]
+launch_runs inst_mem_synth_1 -jobs 8
+wait_on_run inst_mem_synth_1
+export_simulation -of_objects [get_files D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/rtl/ip/inst_mem/inst_mem.xci] -directory D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files -ipstatic_source_dir D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/vivadowork/yingzong/--L_S/--L_S/--1-3/lab_4/lab_4/testbench_behav.wcfg
+source testbench.tcl
+close_sim
