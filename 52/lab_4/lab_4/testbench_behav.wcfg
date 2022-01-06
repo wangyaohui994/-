@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="399.167 ns"></ZoomStartTime>
-      <ZoomEndTime time="524.168 ns"></ZoomEndTime>
-      <Cursor1Time time="427.367 ns"></Cursor1Time>
+      <ZoomStartTime time="114.367 ns"></ZoomStartTime>
+      <ZoomEndTime time="448.168 ns"></ZoomEndTime>
+      <Cursor1Time time="270.100 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="140"></NameColumnWidth>
+      <NameColumnWidth column_width="130"></NameColumnWidth>
       <ValueColumnWidth column_width="70"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
+   <WVObjectSize size="22" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -77,60 +77,40 @@
       <obj_property name="ElementShortName">op[7:0]</obj_property>
       <obj_property name="ObjectShortName">op[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/alu/a" type="array">
-      <obj_property name="ElementShortName">a[31:0]</obj_property>
-      <obj_property name="ObjectShortName">a[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/alu/b" type="array">
-      <obj_property name="ElementShortName">b[31:0]</obj_property>
-      <obj_property name="ObjectShortName">b[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/alu/y" type="array">
-      <obj_property name="ElementShortName">y[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcreg/q" type="array">
-      <obj_property name="ElementShortName">q[31:0]</obj_property>
-      <obj_property name="ObjectShortName">q[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcreg/d" type="array">
-      <obj_property name="ElementShortName">d[31:0]</obj_property>
-      <obj_property name="ObjectShortName">d[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcadd1/y" type="array">
-      <obj_property name="ElementShortName">y[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/jaldatamux/d0" type="array">
+   <wvobject fp_name="/testbench/dut/cpu/pcbrmux/d0" type="array">
       <obj_property name="ElementShortName">d0[31:0]</obj_property>
       <obj_property name="ObjectShortName">d0[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/jaldatamux/d1" type="array">
+   <wvobject fp_name="/testbench/dut/cpu/pcbrmux/d1" type="array">
       <obj_property name="ElementShortName">d1[31:0]</obj_property>
       <obj_property name="ObjectShortName">d1[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/jaldatamux/s" type="logic">
+   <wvobject fp_name="/testbench/dut/cpu/pcbrmux/s" type="logic">
       <obj_property name="ElementShortName">s</obj_property>
       <obj_property name="ObjectShortName">s</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/jaldatamux/y" type="array">
+   <wvobject fp_name="/testbench/dut/cpu/pcbrmux/y" type="array">
       <obj_property name="ElementShortName">y[31:0]</obj_property>
       <obj_property name="ObjectShortName">y[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcjrmux/d0" type="array">
+   <wvobject fp_name="/testbench/dut/cpu/pcmux/d0" type="array">
       <obj_property name="ElementShortName">d0[31:0]</obj_property>
       <obj_property name="ObjectShortName">d0[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcjrmux/d1" type="array">
+   <wvobject fp_name="/testbench/dut/cpu/pcmux/d1" type="array">
       <obj_property name="ElementShortName">d1[31:0]</obj_property>
       <obj_property name="ObjectShortName">d1[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcjrmux/s" type="logic">
+   <wvobject fp_name="/testbench/dut/cpu/pcmux/s" type="logic">
       <obj_property name="ElementShortName">s</obj_property>
       <obj_property name="ObjectShortName">s</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/cpu/pcjrmux/y" type="array">
+   <wvobject fp_name="/testbench/dut/cpu/pcmux/y" type="array">
       <obj_property name="ElementShortName">y[31:0]</obj_property>
       <obj_property name="ObjectShortName">y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/cpu/pcnextbrFD2" type="array">
+      <obj_property name="ElementShortName">pcnextbrFD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcnextbrFD2[31:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -27,7 +27,7 @@ module hazard(
 	input wire[4:0] rsD,rtD,
 	input wire branchD,jumpD,balD,jalD,jrD,
 	output wire forwardaD,forwardbD,
-	output wire stallD,flushD,pcsrcD,
+	output wire stallD,flushD,
 	//execute stage
 	input wire[4:0] rsE,rtE,
 	input wire[4:0] writeregE,
@@ -39,7 +39,7 @@ module hazard(
 	output wire stallE,
 	//mem stage
 	input wire[4:0] writeregM,
-	input wire regwriteM,
+	input wire regwriteM,pcsrcM,jumpM,jrM,jalM,
 	input wire memtoregM,
 	output wire flushM,
 	output wire stallM,
@@ -50,8 +50,8 @@ module hazard(
 	output wire stallW
     );
 
-	wire lwstallD,branchstallD,branchFlushD,unistallD;
-
+	wire lwstallD,unistallD;
+	wire branchflushM;
 	//forwarding sources to D stage (branch equality)
 	assign forwardaD = (rsD != 0 & rsD == writeregM & regwriteM);
 	assign forwardbD = (rtD != 0 & rtD == writeregM & regwriteM);
@@ -85,27 +85,22 @@ module hazard(
 
 	//stalls
 	assign #1 lwstallD = memtoregE & (rtE == rsD | rtE == rtD);
-	assign #1 branchstallD = branchD &
-				(regwriteE & 
-				(writeregE == rsD | writeregE == rtD) |
-				memtoregM &
-				(writeregM == rsD | writeregM == rtD));
 	//assign #1 unistallD = jalD | balD | (jrD & (jumpD == 1'b0)); //BLTZAL、BGEZAL、JAL、JALR
-	assign branchFlushD = pcsrcD; //branch instr
-
+	//assign branchFlushD = pcsrcD; //branch instr
+	assign #1 branchflushM = pcsrcM;
 	assign #1 stallF = stallD;
 
-	assign #1 stallD = lwstallD | branchstallD | stall_divE; //| unistallD;
+	assign #1 stallD = lwstallD | stall_divE; //| unistallD;
 	//assign #1 flushD = branchFlushD | jalD | jrD | jumpD;;
-	assign #1 flushD =1'b0;
+	assign #1 flushD = branchflushM | jalM | jrM | jumpM;
 	
 		//stalling D stalls all previous stages
 	//assign #1 flushE = (stallD & ~stall_divE) | jumpD | branchFlushD;
 	assign #1 stallE = stall_divE;
-	assign #1 flushE = (lwstallD | branchstallD) & ~stall_divE;
+	assign #1 flushE = lwstallD | flushD;
 	
 	assign #1 stallM = 1'b0;
-	assign #1 flushM = stall_divE | flushD;
+	assign #1 flushM = stall_divE ;
 
 	assign #1 stallW = 1'b0;
 	assign #1 flushW = 1'b0;

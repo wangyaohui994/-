@@ -27,7 +27,7 @@ module alu(
     input wire[4:0] sa,
     output reg[31:0] y,
     output wire stall_divE
-    //output reg overflow,
+    //output reg overflow
     //output wire zero
 );
     reg [63:0] hilo;
@@ -45,6 +45,20 @@ module alu(
     assign annul_div = 1'b0;
     initial stall_div = 1'b0;
     wire divresult_ready;//除法运算是否结束(结果是否准备好)
+
+    // reg [31:0]comp_b;//减法变加法
+    // initial comp_b = 32'b0;
+    // wire add_overflow; //加法溢出
+    // wire sub_overflow;//减法溢出
+    // assign add_overflow = ( (y[31] & (~a[31] & ~b[31])) || (~y[31] & (a[31] & b[31]))) &&(op == `EXE_ADD_OP || op == `EXE_ADDI_OP );
+    // assign sub_overflow = ( (op == `EXE_SUB_OP ) && ((y[31] & (~a[31] & ~comp_b[31])) || (~y[31] & (a[31] & comp_b[31]))) );
+    // assign overflow = sub_overflow || sub_overflow;
+
+    // //无溢出才有值
+    // always@(y) begin
+    //      if(overflow == 1) 
+    //       y = 0;
+    // end
     
     always @(*) begin
         case (op)

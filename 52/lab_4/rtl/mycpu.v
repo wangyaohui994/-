@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+ `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -27,23 +27,75 @@ module mycpu(
     output wire memwriteM,
     output wire[31:0] aluoutM,writedataM,
     input wire[31:0] readdataM,
-    output wire[3:0] selectM
+    output wire[3:0] selectM,
+
+    //debug
+    output [31:0] debug_wb_pc,
+    output [3:0] debug_wb_rf_wen,
+    output [4:0] debug_wb_rf_wnum,
+    output [31:0] debug_wb_rf_wdata
 );
 
-    wire [5:0] opD,functD;
+    
     wire regdstE,alusrcE,pcsrcD,memtoregE,memtoregM,memtoregW,
     regwriteE,regwriteM,regwriteW;
     wire flushE,equalD;
     wire [39:0] ascii;
-    //‘≠controller
+    
+    //fetch stage
+    wire stallF;
+    //FD
+    wire [31:0] pcnextFD,pcnextbrFD,pcnextbrFD2,pcplus4F,pcbranchD;
     //decode stage
+    wire [5:0] opD,functD;
+    wire [31:0] pcplus4D,instrD,pcD;
+    wire forwardaD,forwardbD;
+    wire [4:0] rsD,rtD,rdD;
+    wire flushD,stallD;
+    wire [31:0] signimmD,signimmshD;
+    wire [31:0] srcaD,srca2D,srcbD,srcb2D;
+    wire [4:0] saD;
     wire[1:0] aluopD;
     wire memtoregD,memwriteD,branchD,alusrcD,
     regdstD,regwriteD,jumpD,jalD,jrD,balD;
     wire[7:0] alucontrolD,alucontrolE,alucontrolM,alucontrolW;
-
     //execute stage
-    wire memwriteE,jumpE,jalE,jrE,balE;
+    wire [31:0] pcplus4E,instrE;
+    wire [1:0] forwardaE,forwardbE;
+    wire [4:0] rsE,rtE,rdE;
+    wire [4:0] writeregE,writereg2E,writereg3E;
+    wire [31:0] signimmE,pcplus4E,pcE;
+    wire [31:0] srcaE,srca2E,srca3E,srcbE,srcb2E,srcb3E,srcb4E;
+    wire [31:0] aluoutE;
+    wire [4:0] saE;
+    wire stall_divE;
+    wire stallE;
+    wire [31:0] writedata_resultE;
+    wire [3:0] selectE;
+    wire overflow;
+    wire flushE,stallE;
+    wire [5:0] opE,functE;
+    wire memwriteE,jumpE,jalE,jrE,balE,pcsrcE,branchE,equalE;
+    wire [31:0] pcbranchE;
+    //wire [63:0] hilo;
+    //mem stage
+    wire [31:0] pcplus4M,instrM;
+    wire [31:0] pcM;
+    wire [4:0] writeregM;
+    wire flushM,stallM;
+    wire [5:0] opM;
+    wire [4:0] rtM;
+    wire [31:0] srcaM,srca2M,srca3M,srcbM,srcb2M,srcb4M;
+    wire equalM,pcsrcM,branchM;
+    wire [31:0] pcbranchM;
+    wire jumpM,jrM,jalM;
+    //writeback stage
+    wire [4:0] writeregW;
+    wire [31:0] pcW;
+    wire [31:0] aluoutW,readdataW,resultW;
+    wire [31:0] readdata_resultW;
+    wire jumpW,jrW,jalW,balW,branchW;
+    wire flushW,stallW;
 
     maindec md(
         opD,
@@ -57,66 +109,33 @@ module mycpu(
     );
     aludec ad(opD,functD,rtD,alucontrolD);
 
-    assign pcsrcD = branchD & equalD;
+    
 
     //pipeline registers
-    flopenrc #(17) regE(
+    flopenrc #(18) regE(
         clk,
         rst,
         ~stallE,
         flushE,
-        {memtoregD,memwriteD,alusrcD,regdstD,regwriteD,alucontrolD,jumpD,jalD,jrD,balD},
-        {memtoregE,memwriteE,alusrcE,regdstE,regwriteE,alucontrolE,jumpE,jalE,jrE,balE}
+        {memtoregD,memwriteD,alusrcD,regdstD,regwriteD,alucontrolD,jumpD,jalD,jrD,balD,branchD},
+        {memtoregE,memwriteE,alusrcE,regdstE,regwriteE,alucontrolE,jumpE,jalE,jrE,balE,branchE}
     );
     flopenrc #(8) regM(
         clk,rst,
         ~stallM,
         flushM,
-        {memtoregE,memwriteE,regwriteE},
-        {memtoregM,memwriteM,regwriteM}
+        {memtoregE,memwriteE,regwriteE,branchE,jumpE,jalE,jrE,balE},
+        {memtoregM,memwriteM,regwriteM,branchM,jumpM,jalM,jrM,balM}
     );
-    flopenrc #(8) regW(
+    flopenrc #(7) regW(
         clk,rst,
         ~stallW,
         flushW,
-        {memtoregM,regwriteM},
-        {memtoregW,regwriteW}
+        {memtoregM,regwriteM,branchM,jumpM,jalM,jrM,balM},
+        {memtoregW,regwriteW,branchW,jumpW,jalW,jrW,balW}
     );
 
-    //‘≠datapath
-    //fetch stage
-    wire stallF;
-    //FD
-    wire [31:0] pcnextFD,pcnextbrFD,pcnextbrFD2,pcplus4F,pcbranchD;
-    //decode stage
-    wire [31:0] pcplus4D,instrD;
-    wire forwardaD,forwardbD;
-    wire [4:0] rsD,rtD,rdD;
-    wire flushD,stallD;
-    wire [31:0] signimmD,signimmshD;
-    wire [31:0] srcaD,srca2D,srcbD,srcb2D;
-    wire [4:0] saD;
-    //execute stage
-    wire [1:0] forwardaE,forwardbE;
-    wire [4:0] rsE,rtE,rdE;
-    wire [4:0] writeregE,writereg2E,writereg3E;
-    wire [31:0] signimmE,pcplus4E;
-    wire [31:0] srcaE,srca2E,srca3E,srcbE,srcb2E,srcb3E,srcb4E;
-    wire [31:0] aluoutE;
-    wire [4:0] saE;
-    wire stall_divE;
-    wire stallE;
-    wire [31:0] writedata_resultE;
-    wire [3:0] selectE;
-    //wire [63:0] hilo;
-    //mem stage
-    wire [4:0] writeregM;
-    
-    //writeback stage
-    wire [4:0] writeregW;
-    wire [31:0] aluoutW,readdataW,resultW;
-    wire [31:0] readdata_resultW;
-    //stall_singed
+
     
 
     //hazard detection
@@ -127,7 +146,7 @@ module mycpu(
         rsD,rtD,
         branchD,jumpD,balD,jalD,jrD,
         forwardaD,forwardbD,
-        stallD,flushD,pcsrcD,
+        stallD,flushD,
         //execute stage
         rsE,rtE,
         writeregE,
@@ -140,6 +159,10 @@ module mycpu(
         //mem stage
         writeregM,
         regwriteM,
+        pcsrcM,
+        jumpM,
+        jrM,
+        jalM,
         memtoregM,
         flushM,
         stallM,
@@ -152,11 +175,11 @@ module mycpu(
     
 
     //next PC logic (operates in fetch an decode)
-    mux2 #(32) pcbrmux(pcplus4F,pcbranchD,pcsrcD,pcnextbrFD);
+    mux2 #(32) pcbrmux(pcplus4F,pcbranchM,pcsrcM,pcnextbrFD);
     mux2 #(32) pcmux(pcnextbrFD,
-        {pcplus4D[31:28],instrD[25:0],2'b00},
-        jumpD,pcnextbrFD2);
-    mux2 #(32) pcjrmux(pcnextbrFD2,srca2E,jrD & jumpD,pcnextFD);//jr jump to reg[rs]
+        {pcplus4M[31:28],instrM[25:0],2'b00},
+        jumpM | jalM,pcnextbrFD2);
+    mux2 #(32) pcjrmux(pcnextbrFD2,srca2M,jrM,pcnextFD);//jr jump to reg[rs]
     //regfile (operates in decode and writeback)
     regfile rf(clk,regwriteW,rsD,rtD,writeregW,resultW,srcaD,srcbD);
 
@@ -167,12 +190,14 @@ module mycpu(
     //decode stage
     flopenrc #(32) r1D(clk,rst,~stallD,flushD,pcplus4F,pcplus4D);
     flopenrc #(32) r2D(clk,rst,~stallD,flushD,instrF,instrD);
+    flopenrc #(32) r3D(clk,rst,~stallD,flushD,pcF,pcD);
+    
     signext se(instrD[15:0],instrD [29:28] ,signimmD);
     sl2 immsh(signimmD,signimmshD);
     adder pcadd2(pcplus4D,signimmshD,pcbranchD);
     mux2 #(32) forwardamux(srcaD,aluoutM,forwardaD,srca2D);
     mux2 #(32) forwardbmux(srcbD,aluoutM,forwardbD,srcb2D);
-    eqcmp comp(srca2D,srcb2D,alucontrolD,equalD);//branch judge
+    //
 
     assign opD = instrD[31:26];
     assign functD = instrD[5:0];
@@ -191,17 +216,21 @@ module mycpu(
     flopenrc #(5) r7E(clk,rst,~stallE,flushE,saD,saE);
     flopenrc #(32) r8E(clk,rst,~stallE,flushE,instrD,instrE);
     flopenrc #(32) r9E(clk,rst,~stallE,flushE,pcplus4D,pcplus4E);
+    flopenrc #(32) r10E(clk,rst,~stallE,flushE,pcD,pcE);
+    flopenrc #(6) r11E(clk,rst,~stallE,flushE,opD,opE);
+    flopenrc #(32) r12E(clk,rst,~stallE,flushE,pcbranchD,pcbranchE);
     //flopenrc #(8) r8E(clk, rst, ~stallM, flushM, alucontrolE,alucontrolM);
 
+
     mux3 #(32) forwardaemux(srcaE,resultW,aluoutM,forwardaE,srca2E);
-    mux2 #(32) jaldatamux(srca2E,pcplus4E,(jalE | balE | (jrE & (jumpE == 1'b0))),srca3E);//jalÊåá‰ª§pcÂä†8ÔºåÂèñpc+4
+    mux2 #(32) jaldatamux(srca2E,pcplus4E,(jalE | balE | (jrE & (jumpE == 1'b0))),srca3E);//jal÷∏¡Ópcº”8£¨»°pc+4
     mux3 #(32) forwardbemux(srcbE,resultW,aluoutM,forwardbE,srcb2E);
     mux2 #(32) srcbmux(srcb2E,signimmE,alusrcE,srcb3E);
-    mux2 #(32) jal8mux(srcb3E,32'b100,(jalE | balE | (jrE & (jumpE == 1'b0))),srcb4E);//jalÊåá‰ª§pcÂä†4ÔºåÂèñ4.Âú®ALUÈáåËøêÁÆó
+    mux2 #(32) jal8mux(srcb3E,32'b100,(jalE | balE | (jrE & (jumpE == 1'b0))),srcb4E);//jal÷∏¡Ópcº”4£¨»°4.‘⁄ALU¿Ô‘ÀÀ„
     alu alu(clk,rst,srca3E,srcb4E,alucontrolE,saE,aluoutE,stall_divE);
     mux2 #(5) wrmux(rtE,rdE,regdstE,writereg2E);
     mux2 #(5) jaladdressmux(writereg2E,5'b11111,(jalE | balE | (jrE & (jumpE == 1'b0))),writereg3E);//jal store in reg[31]
-    mux2 #(5) jalraddmux(writereg3E,rdE,(jrE & (jumpE == 1'b0) & (rdE != 5'b00000)) ,writeregE);//jalr store in reg[rd] ,if rd not in empty 
+    mux2 #(5) jalraddmux(writereg3E,rdE,(jrE & (jumpE == 1'b0) & rdE != 5'b00000) ,writeregE);//jalr store in reg[rd] ,if rd not in empty 
     instdec instdec(instrF,ascii);
 
     write_data my_wd(alucontrolE,aluoutE,srcb2E,selectE,writedata_resultE);
@@ -212,12 +241,27 @@ module mycpu(
     flopenrc #(5) r3M(clk,rst,~stallM,flushM,writeregE,writeregM);
     flopenrc #(8) r4M(clk,rst,~stallM,flushM,alucontrolE,alucontrolM);
     flopenrc #(5) r5M(clk,rst,~stallM,flushM,selectE,selectM);
+    flopenrc #(32) r6M(clk,rst,~stallM,flushM,pcE,pcM);
+    flopenrc #(5) r7M(clk,rst,~stallM,flushM,rtE,rtM);
+    flopenrc #(6) r8M(clk,rst,~stallM,flushM,opE,opM);
+    flopenrc #(32) r9M(clk,rst,~stallM,flushM,srca3E,srca3M);
+    flopenrc #(32) r10M(clk,rst,~stallM,flushM,srcb4E,srcb4M);
+    flopenrc #(32) r11M(clk,rst,~stallM,flushM,pcbranchE,pcbranchM);
+    flopenrc #(32) r12M(clk,rst,~stallM,flushM,srca2E,srca2M);
+    flopenrc #(32) r13M(clk,rst,~stallM,flushM,srcb2E,srcb2M);
+    flopenrc #(32) r14M(clk,rst,~stallM,flushM,srcaE,srcaM);
+    flopenrc #(32) r15M(clk,rst,~stallM,flushM,srcbE,srcbM);
+    flopenrc #(32) r16E(clk,rst,~stallE,flushE,instrE,instrM);
+    flopenrc #(32) r17E(clk,rst,~stallE,flushE,pcplus4E,pcplus4M);
 
+    eqcmp comp(opM,rtM,srcaM,srcbM,equalM);//branch judge
+    assign pcsrcM = branchM & equalM;
     //writeback stage
     flopenrc #(32) r1W(clk,rst,~stallW,flushW,aluoutM,aluoutW);
     flopenrc #(32) r2W(clk,rst,~stallW,flushW,readdataM,readdataW);
     flopenrc #(5) r3W(clk,rst,~stallW,flushW,writeregM,writeregW);
     flopenrc #(8) r4W(clk,rst,~stallW,flushW,alucontrolM,alucontrolW);
+    flopenrc #(32) r5W(clk,rst,~stallW,flushW,pcM,pcW);
 
     read_data my_rd(alucontrolW,readdataW,aluoutW,readdata_resultW);
 
@@ -225,6 +269,10 @@ module mycpu(
 
     mux2 #(32) resmux(aluoutW,readdata_resultW,memtoregW,resultW);
 
-
+    // DEBUG OUTPUT
+    assign debug_wb_pc          = pcW;
+    assign debug_wb_rf_wen      = {4{regwriteW & ~stallW}};
+    assign debug_wb_rf_wnum     = writeregW;
+    assign debug_wb_rf_wdata    = resultW;
 
 endmodule
