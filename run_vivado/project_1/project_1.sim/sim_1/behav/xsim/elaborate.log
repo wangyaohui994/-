@@ -1,0 +1,63 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 13 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:126]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 13 for port 'q' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:127]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:133]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'q' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:134]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:254]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'wea' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/soc_lite_top.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.flopenrc(WIDTH=18)
+Compiling module xil_defaultlib.flopenrc(WIDTH=13)
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.pc_mux
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pc(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=6)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.instdec
+Compiling module xil_defaultlib.write_data
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=5)
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.read_data
+Compiling module xil_defaultlib.mycpu
+Compiling module xil_defaultlib.top
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" Line 123. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

@@ -1,0 +1,455 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jan  6 13:54:34 2022
+# Process ID: 30384
+# Current directory: D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25464 D:\vivadowork\CO-lab-material-CQU\test\func_test_v0.01_n4ddr\soc_sram_func\run_vivado\project_1\project_1.xpr
+# Log file: D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/vivado.log
+# Journal file: D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1\vivado.jou
+# Running On: LAPTOP-45BG05BI, OS: Windows, CPU Frequency: 2894 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v
+update_compile_order -fileset sources_1
+set_property is_global_include true [get_files  D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v]
+set_property is_global_include false [get_files  D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v]
+update_compile_order -fileset sources_1
+add_files -norecurse D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/maindec.v
+update_compile_order -fileset sources_1
+add_files -norecurse {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/defines2.vh D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/defines.vh}
+add_files -norecurse {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/write_data.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/aludec.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/regfile.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/adder.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/sl2.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/signext.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/floprc.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mmu.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/alu.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopr.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/hazard.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/div.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/top.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mux2.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mux3.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopenr.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/eqcmp.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/maindec.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopenrc.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/pc.v D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/read_data.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target all [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+export_ip_user_files -of_objects [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset clk_pll
+set_property top clk_pll [get_fileset clk_pll]
+move_files -fileset [get_fileset clk_pll] [get_files -of_objects [get_fileset sources_1] D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+generate_target all [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+export_ip_user_files -of_objects [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -directory D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset data_ram
+set_property top data_ram [get_fileset data_ram]
+move_files -fileset [get_fileset data_ram] [get_files -of_objects [get_fileset sources_1] D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+generate_target all [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+export_ip_user_files -of_objects [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -directory D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset inst_ram
+set_property top inst_ram [get_fileset inst_ram]
+move_files -fileset [get_fileset inst_ram] [get_files -of_objects [get_fileset sources_1] D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+launch_run {clk_pll_synth_1 data_ram_synth_1 inst_ram_synth_1}
+wait_on_run clk_pll_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+wait_on_run inst_ram_synth_1
+
+launch_simulation
+add_files -norecurse D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/instdec.v
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_top.tcl
+run all
+current_wave_config {Untitled 3}
+add_wave {{/tb_top/soc_lite/top/cpu/instdec/ascii}} 
+restart
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+set_property xsim.view {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/tb_top_behav.wcfg D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/md/jal}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/md/controls}} 
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcjrmux/d1}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcjrmux/s}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcjrmux/y}} 
+restart
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcjrmux/d0}} 
+restart
+run all
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+add_files -norecurse D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/pc_mux.v
+update_compile_order -fileset sources_1
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcD}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcF}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/pcF}} {{/tb_top/soc_lite/top/cpu/pcD}} {{/tb_top/soc_lite/top/cpu/pcE}} {{/tb_top/soc_lite/top/cpu/pcM}} {{/tb_top/soc_lite/top/cpu/pcW}} 
+restart
+run all
+restart
+run all
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+run all
+restart
+restart
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/comp/y}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/comp/a}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/comp/b}} 
+restart
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/writedataM}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/readdataM}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/data_ram/douta}} 
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/writedata}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/rf/rf[0]}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/a}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/b}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/y}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/resmux/y}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/resmux}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/md/memtoreg}} 
+restart
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/data_ram/addra}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutM}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/my_rd/alucontrolW}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/my_rd/readdata_resultW}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/my_rd/readdataW}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/my_rd/dataadrW}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutE}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutW}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutM}} 
+restart
+run all
+update_compile_order -fileset sources_1
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutE}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutM}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/aluoutW}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/resultW}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/hilo}} 
+relaunch_sim
+relaunch_sim
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/mydiv/result_o}} 
+relaunch_sim
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/divresult}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/mydiv/opdata1_i}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/alu/mydiv/opdata2_i}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/srca3E}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/srcb4E}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/srcbD}} 
+restart
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/stallF}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/stallD}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/flushD}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/flushE}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/stallE}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/flushM}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/stallM}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/flushW}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/top/cpu/h/stallW}} 
+restart
+run all
+run all
+restart
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+save_wave_config {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg}
+close_sim

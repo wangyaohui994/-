@@ -1,0 +1,833 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Jan  7 01:05:03 2022
+# Process ID: 20168
+# Current directory: D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17584 D:\vivadowork\CO-lab-material-CQU\test\func_test_v0.01_n4ddr\soc_sram_func\run_vivado\project_1\project_1.xpr
+# Log file: D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/vivado.log
+# Journal file: D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1\vivado.jou
+# Running On: LAPTOP-45BG05BI, OS: Windows, CPU Frequency: 2894 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 1239.652 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/vivado/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/eqcmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eqcmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/instdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu
+WARNING: [VRFC 10-3248] data object 'pcplus4E' is already declared [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:67]
+WARNING: [VRFC 10-3703] second declaration of 'pcplus4E' ignored [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:67]
+WARNING: [VRFC 10-3248] data object 'flushE' is already declared [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:75]
+WARNING: [VRFC 10-3703] second declaration of 'flushE' ignored [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:75]
+INFO: [VRFC 10-2458] undeclared symbol balM, assumed default net type wire [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:127]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/pc_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/read_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/sl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/write_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 13 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:126]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 13 for port 'q' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:127]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:133]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'q' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:134]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:254]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'wea' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/soc_lite_top.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.flopenrc(WIDTH=18)
+Compiling module xil_defaultlib.flopenrc(WIDTH=13)
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.pc_mux
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pc(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=6)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.instdec
+Compiling module xil_defaultlib.write_data
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=5)
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.read_data
+Compiling module xil_defaultlib.mycpu
+Compiling module xil_defaultlib.top
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" Line 123. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1239.652 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1239.652 ; gain = 0.000
+run all
+==============================================================
+Test begin!
+----[   7715 ns] Number 8'd01 Functional Test Point PASS!!!
+----[  16895 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc70038
+----[  25855 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc4ac3c
+----[  36195 ns] Number 8'd04 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc2205c
+----[  53345 ns] Number 8'd05 Functional Test Point PASS!!!
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc36a54
+----[  66465 ns] Number 8'd06 Functional Test Point PASS!!!
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc54574
+----[  80795 ns] Number 8'd07 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc557a0
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc56740
+----[  93325 ns] Number 8'd08 Functional Test Point PASS!!!
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc35b0c
+----[ 103445 ns] Number 8'd09 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc34adc
+----[ 113985 ns] Number 8'd10 Functional Test Point PASS!!!
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc6f3f4
+----[ 125045 ns] Number 8'd11 Functional Test Point PASS!!!
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc0407c
+----[ 139755 ns] Number 8'd12 Functional Test Point PASS!!!
+        [ 142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc386f0
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc39690
+----[ 171645 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc3f94c
+        [ 202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc4188c
+----[ 213555 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc6a670
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc6b610
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc6c598
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc6d550
+----[ 256585 ns] Number 8'd15 Functional Test Point PASS!!!
+----[ 260145 ns] Number 8'd16 Functional Test Point PASS!!!
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc65b80
+----[ 263705 ns] Number 8'd17 Functional Test Point PASS!!!
+----[ 265955 ns] Number 8'd18 Functional Test Point PASS!!!
+----[ 268725 ns] Number 8'd19 Functional Test Point PASS!!!
+----[ 271495 ns] Number 8'd20 Functional Test Point PASS!!!
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc643a8
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc65348
+----[ 285745 ns] Number 8'd21 Functional Test Point PASS!!!
+        [ 292000 ns] Test is running, debug_wb_pc = 0xbfc096b4
+----[ 297055 ns] Number 8'd22 Functional Test Point PASS!!!
+        [ 302000 ns] Test is running, debug_wb_pc = 0xbfc2adc8
+----[ 311475 ns] Number 8'd23 Functional Test Point PASS!!!
+        [ 312000 ns] Test is running, debug_wb_pc = 0xbfc09ef0
+        [ 322000 ns] Test is running, debug_wb_pc = 0xbfc0ae90
+----[ 326985 ns] Number 8'd24 Functional Test Point PASS!!!
+        [ 332000 ns] Test is running, debug_wb_pc = 0xbfc06c94
+----[ 340395 ns] Number 8'd25 Functional Test Point PASS!!!
+        [ 342000 ns] Test is running, debug_wb_pc = 0xbfc44940
+----[ 348605 ns] Number 8'd26 Functional Test Point PASS!!!
+        [ 352000 ns] Test is running, debug_wb_pc = 0xbfc56e1c
+----[ 354865 ns] Number 8'd27 Functional Test Point PASS!!!
+        [ 362000 ns] Test is running, debug_wb_pc = 0xbfc710e4
+----[ 364775 ns] Number 8'd28 Functional Test Point PASS!!!
+        [ 372000 ns] Test is running, debug_wb_pc = 0xbfc5f5c8
+----[ 372765 ns] Number 8'd29 Functional Test Point PASS!!!
+        [ 382000 ns] Test is running, debug_wb_pc = 0xbfc3d14c
+----[ 387555 ns] Number 8'd30 Functional Test Point PASS!!!
+        [ 392000 ns] Test is running, debug_wb_pc = 0xbfc08020
+----[ 398585 ns] Number 8'd31 Functional Test Point PASS!!!
+        [ 402000 ns] Test is running, debug_wb_pc = 0xbfc5dac4
+        [ 412000 ns] Test is running, debug_wb_pc = 0xbfc5ea64
+----[ 412365 ns] Number 8'd32 Functional Test Point PASS!!!
+        [ 422000 ns] Test is running, debug_wb_pc = 0xbfc60a9c
+----[ 424225 ns] Number 8'd33 Functional Test Point PASS!!!
+        [ 432000 ns] Test is running, debug_wb_pc = 0xbfc0c804
+----[ 436415 ns] Number 8'd34 Functional Test Point PASS!!!
+        [ 442000 ns] Test is running, debug_wb_pc = 0xbfc05b78
+----[ 448235 ns] Number 8'd35 Functional Test Point PASS!!!
+        [ 452000 ns] Test is running, debug_wb_pc = 0xbfc66390
+        [ 462000 ns] Test is running, debug_wb_pc = 0xbfc67330
+----[ 462235 ns] Number 8'd36 Functional Test Point PASS!!!
+        [ 472000 ns] Test is running, debug_wb_pc = 0xbfc4c568
+        [ 482000 ns] Test is running, debug_wb_pc = 0xbfc4d6a0
+        [ 492000 ns] Test is running, debug_wb_pc = 0xbfc4e864
+        [ 502000 ns] Test is running, debug_wb_pc = 0xbfc4fa14
+----[ 510455 ns] Number 8'd37 Functional Test Point PASS!!!
+        [ 512000 ns] Test is running, debug_wb_pc = 0xbfc1b328
+        [ 522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 532000 ns] Test is running, debug_wb_pc = 0xbfc1d6a0
+        [ 542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 552000 ns] Test is running, debug_wb_pc = 0x00000000
+----[ 558355 ns] Number 8'd38 Functional Test Point PASS!!!
+        [ 562000 ns] Test is running, debug_wb_pc = 0xbfc5873c
+        [ 572000 ns] Test is running, debug_wb_pc = 0xbfc598ec
+        [ 582000 ns] Test is running, debug_wb_pc = 0xbfc5aa9c
+        [ 592000 ns] Test is running, debug_wb_pc = 0xbfc5bc08
+        [ 602000 ns] Test is running, debug_wb_pc = 0xbfc5cdd0
+----[ 606575 ns] Number 8'd39 Functional Test Point PASS!!!
+        [ 612000 ns] Test is running, debug_wb_pc = 0xbfc46e88
+        [ 622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 632000 ns] Test is running, debug_wb_pc = 0xbfc48f08
+        [ 642000 ns] Test is running, debug_wb_pc = 0xbfc49f28
+----[ 644075 ns] Number 8'd40 Functional Test Point PASS!!!
+        [ 652000 ns] Test is running, debug_wb_pc = 0xbfc23cdc
+        [ 662000 ns] Test is running, debug_wb_pc = 0xbfc24dec
+        [ 672000 ns] Test is running, debug_wb_pc = 0xbfc25ec0
+        [ 682000 ns] Test is running, debug_wb_pc = 0xbfc26fe8
+        [ 692000 ns] Test is running, debug_wb_pc = 0xbfc2814c
+----[ 695405 ns] Number 8'd41 Functional Test Point PASS!!!
+        [ 702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 712000 ns] Test is running, debug_wb_pc = 0xbfc17200
+        [ 722000 ns] Test is running, debug_wb_pc = 0xbfc18328
+        [ 732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 742000 ns] Test is running, debug_wb_pc = 0xbfc1a4f8
+----[ 749045 ns] Number 8'd42 Functional Test Point PASS!!!
+        [ 752000 ns] Test is running, debug_wb_pc = 0xbfc0fcac
+        [ 762000 ns] Test is running, debug_wb_pc = 0xbfc10b8c
+        [ 772000 ns] Test is running, debug_wb_pc = 0xbfc11a6c
+        [ 782000 ns] Test is running, debug_wb_pc = 0xbfc1294c
+        [ 792000 ns] Test is running, debug_wb_pc = 0xbfc1381c
+        [ 802000 ns] Test is running, debug_wb_pc = 0xbfc14714
+----[ 808275 ns] Number 8'd43 Functional Test Point PASS!!!
+        [ 812000 ns] Test is running, debug_wb_pc = 0xbfc3aa1c
+        [ 822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 842000 ns] Test is running, debug_wb_pc = 0xbfc3b7a0
+        [ 852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 862000 ns] Test is running, debug_wb_pc = 0xbfc3c074
+----[ 868425 ns] Number 8'd44 Functional Test Point PASS!!!
+        [ 872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 882000 ns] Test is running, debug_wb_pc = 0xbfc31a80
+        [ 892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 932000 ns] Test is running, debug_wb_pc = 0xbfc330d8
+        [ 942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 952000 ns] Test is running, debug_wb_pc = 0x00000000
+----[ 955935 ns] Number 8'd45 Functional Test Point PASS!!!
+        [ 962000 ns] Test is running, debug_wb_pc = 0xbfc2c598
+        [ 972000 ns] Test is running, debug_wb_pc = 0xbfc2d538
+----[ 979555 ns] Number 8'd46 Functional Test Point PASS!!!
+        [ 982000 ns] Test is running, debug_wb_pc = 0xbfc01880
+        [ 992000 ns] Test is running, debug_wb_pc = 0xbfc02820
+----[1000935 ns] Number 8'd47 Functional Test Point PASS!!!
+        [1002000 ns] Test is running, debug_wb_pc = 0xbfc456e8
+----[1010545 ns] Number 8'd48 Functional Test Point PASS!!!
+        [1012000 ns] Test is running, debug_wb_pc = 0xbfc57464
+----[1020135 ns] Number 8'd49 Functional Test Point PASS!!!
+        [1022000 ns] Test is running, debug_wb_pc = 0xbfc51c68
+----[1029105 ns] Number 8'd50 Functional Test Point PASS!!!
+        [1032000 ns] Test is running, debug_wb_pc = 0xbfc22984
+----[1034315 ns] Number 8'd51 Functional Test Point PASS!!!
+----[1040995 ns] Number 8'd52 Functional Test Point PASS!!!
+        [1042000 ns] Test is running, debug_wb_pc = 0xbfc00e9c
+----[1048315 ns] Number 8'd53 Functional Test Point PASS!!!
+        [1052000 ns] Test is running, debug_wb_pc = 0xbfc52fcc
+----[1055315 ns] Number 8'd54 Functional Test Point PASS!!!
+        [1062000 ns] Test is running, debug_wb_pc = 0xbfc61964
+----[1062635 ns] Number 8'd55 Functional Test Point PASS!!!
+----[1070595 ns] Number 8'd56 Functional Test Point PASS!!!
+        [1072000 ns] Test is running, debug_wb_pc = 0xbfc6e1fc
+----[1077915 ns] Number 8'd57 Functional Test Point PASS!!!
+        [1082000 ns] Test is running, debug_wb_pc = 0xbfc31058
+----[1083485 ns] Number 8'd58 Functional Test Point PASS!!!
+        [1092000 ns] Test is running, debug_wb_pc = 0xbfc2f12c
+        [1102000 ns] Test is running, debug_wb_pc = 0xbfc30060
+----[1107485 ns] Number 8'd59 Functional Test Point PASS!!!
+        [1112000 ns] Test is running, debug_wb_pc = 0xbfc679d0
+        [1122000 ns] Test is running, debug_wb_pc = 0xbfc688e4
+        [1132000 ns] Test is running, debug_wb_pc = 0xbfc6980c
+----[1133145 ns] Number 8'd60 Functional Test Point PASS!!!
+        [1142000 ns] Test is running, debug_wb_pc = 0xbfc29434
+        [1152000 ns] Test is running, debug_wb_pc = 0xbfc2a368
+----[1152115 ns] Number 8'd61 Functional Test Point PASS!!!
+        [1162000 ns] Test is running, debug_wb_pc = 0xbfc4331c
+        [1172000 ns] Test is running, debug_wb_pc = 0xbfc44208
+----[1173455 ns] Number 8'd62 Functional Test Point PASS!!!
+        [1182000 ns] Test is running, debug_wb_pc = 0xbfc62640
+        [1192000 ns] Test is running, debug_wb_pc = 0xbfc63550
+----[1201725 ns] Number 8'd63 Functional Test Point PASS!!!
+        [1202000 ns] Test is running, debug_wb_pc = 0xbfc00d8c
+        [1212000 ns] Test is running, debug_wb_pc = 0xbfc0e07c
+        [1222000 ns] Test is running, debug_wb_pc = 0x00000000
+----[1228345 ns] Number 8'd64 Functional Test Point PASS!!!
+--------------------------------------------------------------
+[1228867 ns] Error!!!
+    reference: PC = 0xbfc00380, wb_rf_wnum = 0x1a, wb_rf_wdata = 0x00004000
+    mycpu    : PC = 0xbfc424a4, wb_rf_wnum = 0x09, wb_rf_wdata = 0x41000000
+--------------------------------------------------------------
+--------------------------------------------------------------
+[1228885 ns] Error(  0)!!! Occurred in number 8'd65 Functional Test Point!
+--------------------------------------------------------------
+$finish called at time : 1228907 ns : File "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" Line 152
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1239.652 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/vivado/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/eqcmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eqcmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/flopr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/instdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu
+WARNING: [VRFC 10-3248] data object 'pcplus4E' is already declared [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:67]
+WARNING: [VRFC 10-3703] second declaration of 'pcplus4E' ignored [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:67]
+WARNING: [VRFC 10-3248] data object 'flushE' is already declared [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:75]
+WARNING: [VRFC 10-3703] second declaration of 'flushE' ignored [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:75]
+INFO: [VRFC 10-2458] undeclared symbol balM, assumed default net type wire [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:127]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/pc_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/read_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/sl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/write_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 13 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:126]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 13 for port 'q' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:127]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:133]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'q' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:134]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'd' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/mycpu.v:254]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'wea' [D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/rtl/soc_lite_top.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.flopenrc(WIDTH=18)
+Compiling module xil_defaultlib.flopenrc(WIDTH=13)
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.pc_mux
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pc(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=6)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.instdec
+Compiling module xil_defaultlib.write_data
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=5)
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.read_data
+Compiling module xil_defaultlib.mycpu
+Compiling module xil_defaultlib.top
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" Line 123. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1239.652 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/run_vivado/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1239.652 ; gain = 0.000
+run all
+==============================================================
+Test begin!
+----[   7715 ns] Number 8'd01 Functional Test Point PASS!!!
+----[  16895 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc70038
+----[  25855 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc4ac3c
+----[  36195 ns] Number 8'd04 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc2205c
+----[  53345 ns] Number 8'd05 Functional Test Point PASS!!!
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc36a54
+----[  66465 ns] Number 8'd06 Functional Test Point PASS!!!
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc54574
+----[  80795 ns] Number 8'd07 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc557a0
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc56740
+----[  93325 ns] Number 8'd08 Functional Test Point PASS!!!
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc35b0c
+----[ 103445 ns] Number 8'd09 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc34adc
+----[ 113985 ns] Number 8'd10 Functional Test Point PASS!!!
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc6f3f4
+----[ 125045 ns] Number 8'd11 Functional Test Point PASS!!!
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc0407c
+----[ 139755 ns] Number 8'd12 Functional Test Point PASS!!!
+        [ 142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc386f0
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc39690
+----[ 171645 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc3f94c
+        [ 202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc4188c
+----[ 213555 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc6a670
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc6b610
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc6c598
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc6d550
+----[ 256585 ns] Number 8'd15 Functional Test Point PASS!!!
+----[ 260145 ns] Number 8'd16 Functional Test Point PASS!!!
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc65b80
+----[ 263705 ns] Number 8'd17 Functional Test Point PASS!!!
+----[ 265955 ns] Number 8'd18 Functional Test Point PASS!!!
+----[ 268725 ns] Number 8'd19 Functional Test Point PASS!!!
+----[ 271495 ns] Number 8'd20 Functional Test Point PASS!!!
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc643a8
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc65348
+----[ 285745 ns] Number 8'd21 Functional Test Point PASS!!!
+        [ 292000 ns] Test is running, debug_wb_pc = 0xbfc096b4
+----[ 297055 ns] Number 8'd22 Functional Test Point PASS!!!
+        [ 302000 ns] Test is running, debug_wb_pc = 0xbfc2adc8
+----[ 311475 ns] Number 8'd23 Functional Test Point PASS!!!
+        [ 312000 ns] Test is running, debug_wb_pc = 0xbfc09ef0
+        [ 322000 ns] Test is running, debug_wb_pc = 0xbfc0ae90
+----[ 326985 ns] Number 8'd24 Functional Test Point PASS!!!
+        [ 332000 ns] Test is running, debug_wb_pc = 0xbfc06c94
+----[ 340395 ns] Number 8'd25 Functional Test Point PASS!!!
+        [ 342000 ns] Test is running, debug_wb_pc = 0xbfc44940
+----[ 348605 ns] Number 8'd26 Functional Test Point PASS!!!
+        [ 352000 ns] Test is running, debug_wb_pc = 0xbfc56e1c
+----[ 354865 ns] Number 8'd27 Functional Test Point PASS!!!
+        [ 362000 ns] Test is running, debug_wb_pc = 0xbfc710e4
+----[ 364775 ns] Number 8'd28 Functional Test Point PASS!!!
+        [ 372000 ns] Test is running, debug_wb_pc = 0xbfc5f5c8
+----[ 372765 ns] Number 8'd29 Functional Test Point PASS!!!
+        [ 382000 ns] Test is running, debug_wb_pc = 0xbfc3d14c
+----[ 387555 ns] Number 8'd30 Functional Test Point PASS!!!
+        [ 392000 ns] Test is running, debug_wb_pc = 0xbfc08020
+----[ 398585 ns] Number 8'd31 Functional Test Point PASS!!!
+        [ 402000 ns] Test is running, debug_wb_pc = 0xbfc5dac4
+        [ 412000 ns] Test is running, debug_wb_pc = 0xbfc5ea64
+----[ 412365 ns] Number 8'd32 Functional Test Point PASS!!!
+        [ 422000 ns] Test is running, debug_wb_pc = 0xbfc60a9c
+----[ 424225 ns] Number 8'd33 Functional Test Point PASS!!!
+        [ 432000 ns] Test is running, debug_wb_pc = 0xbfc0c804
+----[ 436415 ns] Number 8'd34 Functional Test Point PASS!!!
+        [ 442000 ns] Test is running, debug_wb_pc = 0xbfc05b78
+----[ 448235 ns] Number 8'd35 Functional Test Point PASS!!!
+        [ 452000 ns] Test is running, debug_wb_pc = 0xbfc66390
+        [ 462000 ns] Test is running, debug_wb_pc = 0xbfc67330
+----[ 462235 ns] Number 8'd36 Functional Test Point PASS!!!
+        [ 472000 ns] Test is running, debug_wb_pc = 0xbfc4c568
+        [ 482000 ns] Test is running, debug_wb_pc = 0xbfc4d6a0
+        [ 492000 ns] Test is running, debug_wb_pc = 0xbfc4e864
+        [ 502000 ns] Test is running, debug_wb_pc = 0xbfc4fa14
+----[ 510455 ns] Number 8'd37 Functional Test Point PASS!!!
+        [ 512000 ns] Test is running, debug_wb_pc = 0xbfc1b328
+        [ 522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 532000 ns] Test is running, debug_wb_pc = 0xbfc1d6a0
+        [ 542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 552000 ns] Test is running, debug_wb_pc = 0x00000000
+----[ 558355 ns] Number 8'd38 Functional Test Point PASS!!!
+        [ 562000 ns] Test is running, debug_wb_pc = 0xbfc5873c
+        [ 572000 ns] Test is running, debug_wb_pc = 0xbfc598ec
+        [ 582000 ns] Test is running, debug_wb_pc = 0xbfc5aa9c
+        [ 592000 ns] Test is running, debug_wb_pc = 0xbfc5bc08
+        [ 602000 ns] Test is running, debug_wb_pc = 0xbfc5cdd0
+----[ 606575 ns] Number 8'd39 Functional Test Point PASS!!!
+        [ 612000 ns] Test is running, debug_wb_pc = 0xbfc46e88
+        [ 622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 632000 ns] Test is running, debug_wb_pc = 0xbfc48f08
+        [ 642000 ns] Test is running, debug_wb_pc = 0xbfc49f28
+----[ 644075 ns] Number 8'd40 Functional Test Point PASS!!!
+        [ 652000 ns] Test is running, debug_wb_pc = 0xbfc23cdc
+        [ 662000 ns] Test is running, debug_wb_pc = 0xbfc24dec
+        [ 672000 ns] Test is running, debug_wb_pc = 0xbfc25ec0
+        [ 682000 ns] Test is running, debug_wb_pc = 0xbfc26fe8
+        [ 692000 ns] Test is running, debug_wb_pc = 0xbfc2814c
+----[ 695405 ns] Number 8'd41 Functional Test Point PASS!!!
+        [ 702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 712000 ns] Test is running, debug_wb_pc = 0xbfc17200
+        [ 722000 ns] Test is running, debug_wb_pc = 0xbfc18328
+        [ 732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 742000 ns] Test is running, debug_wb_pc = 0xbfc1a4f8
+----[ 749045 ns] Number 8'd42 Functional Test Point PASS!!!
+        [ 752000 ns] Test is running, debug_wb_pc = 0xbfc0fcac
+        [ 762000 ns] Test is running, debug_wb_pc = 0xbfc10b8c
+        [ 772000 ns] Test is running, debug_wb_pc = 0xbfc11a6c
+        [ 782000 ns] Test is running, debug_wb_pc = 0xbfc1294c
+        [ 792000 ns] Test is running, debug_wb_pc = 0xbfc1381c
+        [ 802000 ns] Test is running, debug_wb_pc = 0xbfc14714
+----[ 808275 ns] Number 8'd43 Functional Test Point PASS!!!
+        [ 812000 ns] Test is running, debug_wb_pc = 0xbfc3aa1c
+        [ 822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 842000 ns] Test is running, debug_wb_pc = 0xbfc3b7a0
+        [ 852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 862000 ns] Test is running, debug_wb_pc = 0xbfc3c074
+----[ 868425 ns] Number 8'd44 Functional Test Point PASS!!!
+        [ 872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 882000 ns] Test is running, debug_wb_pc = 0xbfc31a80
+        [ 892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 932000 ns] Test is running, debug_wb_pc = 0xbfc330d8
+        [ 942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 952000 ns] Test is running, debug_wb_pc = 0x00000000
+----[ 955935 ns] Number 8'd45 Functional Test Point PASS!!!
+        [ 962000 ns] Test is running, debug_wb_pc = 0xbfc2c598
+        [ 972000 ns] Test is running, debug_wb_pc = 0xbfc2d538
+----[ 979555 ns] Number 8'd46 Functional Test Point PASS!!!
+        [ 982000 ns] Test is running, debug_wb_pc = 0xbfc01880
+        [ 992000 ns] Test is running, debug_wb_pc = 0xbfc02820
+----[1000935 ns] Number 8'd47 Functional Test Point PASS!!!
+        [1002000 ns] Test is running, debug_wb_pc = 0xbfc456e8
+----[1010545 ns] Number 8'd48 Functional Test Point PASS!!!
+        [1012000 ns] Test is running, debug_wb_pc = 0xbfc57464
+----[1020135 ns] Number 8'd49 Functional Test Point PASS!!!
+        [1022000 ns] Test is running, debug_wb_pc = 0xbfc51c68
+----[1029105 ns] Number 8'd50 Functional Test Point PASS!!!
+        [1032000 ns] Test is running, debug_wb_pc = 0xbfc22984
+----[1034315 ns] Number 8'd51 Functional Test Point PASS!!!
+----[1040995 ns] Number 8'd52 Functional Test Point PASS!!!
+        [1042000 ns] Test is running, debug_wb_pc = 0xbfc00e9c
+----[1048315 ns] Number 8'd53 Functional Test Point PASS!!!
+        [1052000 ns] Test is running, debug_wb_pc = 0xbfc52fcc
+----[1055315 ns] Number 8'd54 Functional Test Point PASS!!!
+        [1062000 ns] Test is running, debug_wb_pc = 0xbfc61964
+----[1062635 ns] Number 8'd55 Functional Test Point PASS!!!
+----[1070595 ns] Number 8'd56 Functional Test Point PASS!!!
+        [1072000 ns] Test is running, debug_wb_pc = 0xbfc6e1fc
+----[1077915 ns] Number 8'd57 Functional Test Point PASS!!!
+        [1082000 ns] Test is running, debug_wb_pc = 0xbfc31058
+----[1083485 ns] Number 8'd58 Functional Test Point PASS!!!
+        [1092000 ns] Test is running, debug_wb_pc = 0xbfc2f12c
+        [1102000 ns] Test is running, debug_wb_pc = 0xbfc30060
+----[1107485 ns] Number 8'd59 Functional Test Point PASS!!!
+        [1112000 ns] Test is running, debug_wb_pc = 0xbfc679d0
+        [1122000 ns] Test is running, debug_wb_pc = 0xbfc688e4
+        [1132000 ns] Test is running, debug_wb_pc = 0xbfc6980c
+----[1133145 ns] Number 8'd60 Functional Test Point PASS!!!
+        [1142000 ns] Test is running, debug_wb_pc = 0xbfc29434
+        [1152000 ns] Test is running, debug_wb_pc = 0xbfc2a368
+----[1152115 ns] Number 8'd61 Functional Test Point PASS!!!
+        [1162000 ns] Test is running, debug_wb_pc = 0xbfc4331c
+        [1172000 ns] Test is running, debug_wb_pc = 0xbfc44208
+----[1173455 ns] Number 8'd62 Functional Test Point PASS!!!
+        [1182000 ns] Test is running, debug_wb_pc = 0xbfc62640
+        [1192000 ns] Test is running, debug_wb_pc = 0xbfc63550
+----[1201725 ns] Number 8'd63 Functional Test Point PASS!!!
+        [1202000 ns] Test is running, debug_wb_pc = 0xbfc00d8c
+        [1212000 ns] Test is running, debug_wb_pc = 0xbfc0e07c
+        [1222000 ns] Test is running, debug_wb_pc = 0x00000000
+----[1228345 ns] Number 8'd64 Functional Test Point PASS!!!
+--------------------------------------------------------------
+[1228867 ns] Error!!!
+    reference: PC = 0xbfc00380, wb_rf_wnum = 0x1a, wb_rf_wdata = 0x00004000
+    mycpu    : PC = 0xbfc424a4, wb_rf_wnum = 0x09, wb_rf_wdata = 0x41000000
+--------------------------------------------------------------
+--------------------------------------------------------------
+[1228885 ns] Error(  0)!!! Occurred in number 8'd65 Functional Test Point!
+--------------------------------------------------------------
+$finish called at time : 1228907 ns : File "D:/vivadowork/CO-lab-material-CQU/test/func_test_v0.01_n4ddr/soc_sram_func/testbench/mycpu_tb.v" Line 152
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1239.652 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  7 01:11:00 2022...
